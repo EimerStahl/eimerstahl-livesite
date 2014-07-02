@@ -1,0 +1,50 @@
+{% extends "default" %}
+{% block content_wrapper %}
+<div class="hero image-5">
+    <header class="element-invisible">
+      <p>Landing page for Contact us page with Image of Office view in City</p>
+    </header>
+</div>
+<div class="container">
+  <div class="l-column2 l-print">
+    <h1 class="landing-hero__text">{{ page.title }}</h1>
+    <div class="office-address">
+      <h2>{% block content %}{{ page.blocks.content|raw }}{% endblock %}</>
+    </div>
+    <div class="rule"></div>
+    <div class="contact-list__container l-print">
+      <ul class="contact-list">
+        {% for profile in page.pagination.items %}
+          <li class="contact-list__item">
+            <div class="contact-name">
+              <a href="{{ site.url }}{{ profile.url }}">{{ profile.title }}</a>
+              <img class="contact-arrow button" src="{{ site.url }}/assets/imgs/site/arrow-down.png">
+            </div>
+            <div class="contact-drawer">
+              <div class="contact-phone">
+                <p>{{ profile.phone }}</p>
+              </div>
+              <div class="contact-email email">
+                <p><a href="#">{{ profile.email }}</a></p>
+              </div>
+              <div class="contact-profile">
+                <a href="{{ site.url }}{{ profile.url }}">View full profile ></a>
+              </div>
+            </div>
+      <div class="black_overlay">
+        <div class="l-card card">
+          <h2 class="is-gray"><img class="card-x" src="{{ site.url }}/assets/imgs/site/navigation-x.png">Contact {{ profile.title }} </h2>
+          <p>Before proceeding to contact an attorney via email, please note: If you are not a current client of Eimer Stahl, please do not include any information in this email that you or someone else considers to be confidential or secret in nature. Prior to the establishment of a lawyer-client relationship, unsolicited emails from non-clients cannot be protected from disclosure.</p>
+          <p><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
+        </div>
+      </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="l-column3">
+    {{ include('includes/sidebar-share.html') }}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,73 @@
+.l-column1 {
+  @include breakpoint($bp2){
+    @include zen-grid-item(3, 1);
+    @include zen-clear(left);
+  }
+}
+
+
+.l-column2 {
+  @include zen-grid-item(12, 1);
+  @include zen-clear();
+  @include breakpoint($bp1){
+    @include zen-grid-item(12, 1);
+  }
+  @include breakpoint($bp2){
+    @include zen-grid-item(7, 4);
+    @include zen-clear(none);
+    padding-right: 14px;
+  }
+}
+
+.l-column3 {
+  @include zen-grid-item(12, 1);
+  @include zen-clear();
+  @include breakpoint($bp1){
+    @include zen-grid-item(12, 1);
+}
+  @include breakpoint($bp2){
+    @include zen-grid-item(2, 11);
+    @include zen-clear(none);
+  }
+}
+
+.l-navigation {
+  @include breakpoint($bp1){
+    @include zen-grid-item(12, 1);
+    @include zen-clear();
+  }
+  @include breakpoint($bp2){
+    @include zen-grid-item(7, 4);
+    @include zen-clear(none);
+  }
+}
+
+.l-1up {
+  @include zen-grid-item(12, 1);
+  @include zen-clear();
+  @include breakpoint($bp1){
+    @include zen-grid-item(12, 1);
+  }
+  @include breakpoint($bp2){
+    @include zen-grid-item(12, 1);
+  }
+}
+
+.l-column1-profile {
+  @include zen-grid-item(12, 1);
+  @include zen-clear();
+  @include breakpoint($bp1){
+    @include zen-grid-item(12, 1);
+  }
+  @include breakpoint($bp2){
+    @include zen-grid-item(3, 1);
+  }
+}
+
+
+
+// .clearfix {
+//   @include breakpoint($bp1){
+
+//   }
+// }

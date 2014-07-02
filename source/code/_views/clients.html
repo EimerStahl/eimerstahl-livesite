@@ -1,0 +1,21 @@
+{% extends "default" %}
+{% block content_wrapper %}
+<div class="hero image-1">
+    <header class="element-invisible">
+      <p>Landing page for "Our Clients" with image of hallway</p>
+    </header>
+</div>
+<div class="container">
+  <div class="l-column2 l-print">
+    <h1 class="landing-hero__text">{{ page.title }}</h1>
+    <h2 class="landing-lede is-gray">{{ page.lede }}</h2>
+    <p class="clients-list__intro">Among our clients are:</p>
+    <div class="clients-list__container">
+      {% block content %}{{ page.blocks.content|raw }}{% endblock %}
+    </div>
+  </div>
+  <div class="l-column3">
+    {{ include('includes/sidebar-share.html') }}
+  </div>
+</div>
+{% endblock %}

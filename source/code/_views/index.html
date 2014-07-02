@@ -1,0 +1,31 @@
+{% extends "default" %}
+{% block content_wrapper %}
+<div id="cycler" class="home-hero">
+  <div class="home-fluidratio active image-1"> </div>
+  <div class="home-fluidratio image-2" > </div>
+  <div class="home-fluidratio image-3" > </div>
+  <div class="home-fluidratio image-4" > </div>
+  <div class="home-fluidratio image-5"> </div>
+</div>
+<div class="container">
+  <div class="l-1up">
+    <div class="home-hero__text">
+      <p>{% block content %}{{ page.blocks.content|raw }}{% endblock %}</p>
+    </div>
+  </div>
+  <div class="l-1up">
+    <ul class="home__news-list">
+      {% for post in data.posts|slice(0, 4) %}
+        <li class="home__news-list__item"> <strong>News:</strong> <span class="home__news-list__title">{{ post.meta.title }}</span>
+        {% if post.pdf %}
+          <a href="{{ site.url }}/assets/PDFs/{{ post.pdf }}">Download PDF ></a>
+            {% else %}
+          <a class="action-block"href="{{ site.url }}{{ post.url }}">Read More ></a>
+          {% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="horizontal-rule" > </div>
+{% endblock %}
+

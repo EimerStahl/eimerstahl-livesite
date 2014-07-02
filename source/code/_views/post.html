@@ -1,0 +1,66 @@
+{% extends "default" %}
+{% block content_wrapper %}
+<div class="hero image-4">
+    <header class="element-invisible">
+      <p>Page for "News Article"  with Image of a view through a screen.</p>
+    </header>
+</div>
+<div class="container">
+  <div class="l-column3 desktop">
+      {{ include('includes/sidebar-share.html') }}
+  </div>
+  <div class="l-column2 l-print">
+    <h1 class="landing-hero__text">News</h1>
+    <div class="post__header">
+      <h2 class="post__title">{{ page.title }}</h2>
+      {% if page.author %}
+      <h5 class="post__author">By {{ page.author|title }}</h5>
+      {% endif %}
+      <p class="post__metadata">
+            {% if page.source and page.displaydate and page.date %}
+               {{ page.source }} </p>
+            {% elseif page.source and page.date %}
+                {{ page.source }}, {{ page.date|date("F j, Y") }} </p>
+            {% elseif page.source %}
+                {{ page.source }} </p>
+            {% elseif page.date %}
+              {{ page.date|date("F j, Y") }} </p>
+            {% endif %}
+    </div>
+    {% if page.image %}
+  </div>
+  <div class="l-column1-profile">
+        <div class="sidebar-image">
+              <img src="{{ site.url }}/assets/imgs/media/{{ page.image }}">
+        </div>
+    </div>
+  <div class="l-column2 l-print">
+    {% endif %}
+    {% if page.images %}
+      </div>
+      <div class="l-column1-profile">
+        <div class="sidebar-image">
+              {% for image in page.images%}
+              <img src="{{ site.url }}/assets/imgs/media/{{ image }}">
+              {% if not loop.last %} {% endif %}
+              {% endfor %}
+        </div>
+    </div>
+  <div class="l-column2 l-print">
+    {% endif %}
+
+    <div class="post-content">
+      <div class="body-content">
+        {% block content %}{{ page.blocks.content|raw }}{% endblock %}
+      </div>
+    </div>
+    <div class="page-back">
+      <p><a href="{{ site.url }}/news">Return to News</a></p>
+    </div>
+  </div>
+    <div class="l-column3 tablet">
+      {{ include('includes/sidebar-share.html') }}
+  </div>
+  </div>
+</div>
+{% endblock %}

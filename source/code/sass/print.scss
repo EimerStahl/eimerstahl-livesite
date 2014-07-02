@@ -1,0 +1,214 @@
+/**
+ * @file
+ * Define print styles here.
+ */
+@media print {
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Typography system rules */
+@import "typography";
+
+// set up base page margins.
+@page {
+margin: 4em;
+}
+
+//print heading
+.print-logo {
+  display: block;
+  float: right;
+  margin-right: 2em;
+  width: 175px;
+  margin-bottom: 5em;
+}
+
+
+//Typography Adjustments
+h1{
+  color: $black !important;
+  font-size: 28px;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-bottom: 0.75em;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h6 p {
+  font-size: 18px;
+  line-height: 1.25;
+  }
+
+h6 {
+  font-size: 18px;
+  line-height: 1.25;
+  }
+
+p, ul, ol {
+  font-size: 12px;
+}
+
+.landing-hero__text,
+.contact-landing-hero__text,
+.profile-landing-hero__text,
+.landing-hero__text{
+  margin-top:0;
+  margin-bottom: -20px;
+}
+
+//Change color of links so that they are visible when printed
+a:link,
+a:visited {
+  color: $black;
+}
+
+//Hide unnecessary elements
+
+.location-arrow,
+.rule,
+.page-back,
+.pagination,
+nav,
+.sidebar-navigation,
+.sidebar-share,
+.hero,
+.home-hero,
+header {
+  display: none;
+}
+
+//set a default size for images.
+img {
+  max-width: 100%;
+}
+
+
+//Adjustments
+.l-print {
+  margin-left: 25%;
+  float: none;
+  padding:0;
+  width: 75%;
+  clear: none;
+}
+
+
+.home-hero__text,
+.home__news-list {
+  margin-left: 25%;
+}
+
+.home-hero__text{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $black;
+}
+.home-hero__text > p {  color: $black;}
+.home__news-list__item {display: block!important;}
+.action-block {display: none;}
+
+.horizontal-rule {
+  border-bottom: 0;
+}
+
+.contact-list__container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.contact-list__item {
+  display: block;
+  padding: 0.15em 0;
+  border-bottom: 0;
+}
+
+.contact-drawer {
+  display: block!important;
+}
+
+.contact-name{
+  float: left;
+  width: 32%;
+}
+
+.contact-phone{
+   margin-top: 0;
+   padding: 0 0 0;
+   float: left;
+   width: 20%;
+}
+
+.contact-email{
+   width: 45%;
+   float: left;
+}
+
+.contact-profile{
+    display: none;
+}
+
+.contact-arrow {
+  display: none;
+}
+
+.clients-list__intro {
+    @include slug(5, 4);
+}
+
+.clients-list__container li {
+  list-style: none;
+  @include slug(0, 1.75);
+  width: 50%;
+  float: left;
+}
+
+.clients-list__container {
+  width: 100%;
+}
+
+.lawyers-list__item {
+  width: 50%;
+  float: left;
+  border: 0;
+  padding: 4px 0 0;
+  margin: 0;
+}
+
+
+.profile__image {
+  width: 20%;
+  float: left;
+  margin-top: -1.5em;
+}
+
+.sidebar-image,
+.profile__awards {
+  width: 20%;
+}
+
+.profile__contact {
+  display: none;
+}
+
+
+.is-not-printed {
+  display: none;
+}
+
+}
+

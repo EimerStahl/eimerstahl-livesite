@@ -1,0 +1,36 @@
+# The contents of this file are parsed and made available as
+# via `site.*`. So for example, {{ site.title }} can be used
+# in a template to get the contents of the `title` key.
+title: EimerStahl
+url: http://www.eimerstahl.com
+# url: http://palantir.net/clients/eimerstahl/site-v2-0603
+
+# Home Page Hero Images go here
+home_image_1: chairs.jpg
+home_image_2: hall.jpg
+home_image_3: hands.jpg
+home_image_4: books.jpg
+home_image_5: eimerstahl.jpg
+
+# Landing Page Hero Images go here
+# All images for the landing page headers must be 2000px by 175px and the edges must fade to black.
+   # Image for the firm landing page
+firm_image: firm.jpg
+
+   # Image for the Lawyers list landing page
+lawyers_image: lawyers.jpg
+
+  # Image for the Lawyers profile page
+lawyers_profile_image: lawyers.jpg
+
+  # Image for the Client list page
+clients_image: clients.jpg
+
+  # Image for the Contact us page
+contact_image: contact.jpg
+
+  # Image for the Media list page
+media_image: media.jpg
+
+  # Image for the Media detail page
+media_post_image: media.jpg

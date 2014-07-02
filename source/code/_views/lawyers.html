@@ -1,0 +1,26 @@
+{% extends "default" %}
+{% block content_wrapper %}
+<div class="hero image-3">
+    <header class="element-invisible">
+      <p>Landing page for "Our Lawyers" with image of seating area in office.</p>
+    </header>
+</div>
+<div class="container">
+  <div class="l-column2 l-print">
+    <h1 class="landing-hero__text">{{ page.title }}</h1>
+    <div class="body-content">
+      {% block content %}{{ page.blocks.content|raw }}{% endblock %}
+    </div>
+    <div class="lawyers-list__container">
+      <ul class="lawyers-list">
+        {% for profile in data.profiles %}
+          <li class="lawyers-list__item"><a href="{{ site.url }}{{ profile.url }}">{{ profile.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="l-column3">
+    {{ include('includes/sidebar-share.html') }}
+  </div>
+</div>
+{% endblock %}

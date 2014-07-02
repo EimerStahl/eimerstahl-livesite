@@ -1,0 +1,65 @@
+{% extends "default" %}
+{% block content_wrapper %}
+<div class="hero image-3">
+    <header class="element-invisible">
+      <p>Page for "Lawyer Profile" with Image of seating area in office.</p>
+    </header>
+</div>
+<div class="container">
+  <div class="l-column2 l-print">
+    <h1 class="landing-hero__text is-not-printed">Our Lawyers</h1>
+    <h2 class="profile__title">{{ page.title }}</h2>
+  </div>
+  <div class="l-column1-profile">
+      {% if page.image %}
+        <div class="profile__image">
+          <img src="{{ site.url }}/assets/imgs/profile/{{ page.image }}">
+        </div>
+      {% endif %}
+      <div class="profile__contact">
+      {% if page.email %}
+        <p class="email is-not-printed"><a href="#">Email {{ page.title }}</a></p>
+      {% endif %}
+      {% if page.phone %}
+        <p>Direct Dial: </br>{{ page.phone }}</p>
+      {% endif %}
+      {% if page.vcard %}
+        <p class="is-not-printed"><a href="{{ site.url }}/assets/vcard/{{ page.vcard }}">Download contact information to Outlook (vCard)</a></p>
+      {% endif %}
+      </div>
+      {% if page.email %}
+      <div class="black_overlay">
+        <div class="l-card card">
+          <h2 class="is-gray"><img class="card-x" src="{{ site.url }}/assets/imgs/site/navigation-x.png">Contact {{ profile.title }} </h2>
+          <p>Before proceeding to contact an attorney via email, please note: If you are not a current client of Eimer Stahl, please do not include any information in this email that you or someone else considers to be confidential or secret in nature. Prior to the establishment of a lawyer-client relationship, unsolicited emails from non-clients cannot be protected from disclosure.</p>
+          <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+        </div>
+      </div>
+      {% endif %}
+      {% if page.awards %}
+        <div class="profile__awards">
+            {% for award in page.awards %}
+                   <img class="profile__award-item" src="{{ site.url }}/assets/imgs/profile/awards/{{ award }}">
+              {% if not loop.last %} {% endif %}
+            {% endfor %}
+        </div>
+       {% endif %}
+  </div>
+  <div class="l-column2 l-print">
+    <div class="bio-content">
+      <div class="body-content">
+        {% block content %}{{ page.blocks.content|raw }}{% endblock %}
+      </div>
+     </div>
+    <div class="page-back">
+      <p><a href="{{ site.url }}/lawyers">Return to Our Lawyers </a></p>
+    </div>
+  </div>
+  <div class="l-column3">
+    <div class="profile__share">
+     {{ include('includes/sidebar-share.html') }}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

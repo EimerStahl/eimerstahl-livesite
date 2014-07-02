@@ -1,0 +1,5 @@
+.l-header {
+  @include zen-grid-item(12, 1);
+  @include zen-clear();
+}
+

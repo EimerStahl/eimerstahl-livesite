@@ -1,0 +1,163 @@
+/**
+ * @file
+ * Design Component (SMACSS module) partial
+ */
+
+// Home Page Hero Area
+
+.home-hero {
+  z-index: -5;
+  position: relative;
+  width: 100%;
+  margin-top: 55px;
+  background-color: $black;
+  height: 385px;
+  @include breakpoint($bp1){
+    margin-top: 0;
+    height: 500px;
+  }
+}
+
+.home-fluidratio.image-1 {
+  display: block;
+    background: url("/assets/imgs/home/books-mobile.jpg") center;
+    @include background(linear-gradient(left, rgba($black,0.7), rgba($black,0)100%), image-url("/assets/imgs/home/books-mobile.jpg") center);
+    background-repeat: no-repeat;
+    background-size: cover;
+  @include breakpoint(600px){
+    display: block;
+    background: url("/assets/imgs/home/chairs.jpg") center;
+    @include background(linear-gradient(left, rgba($black,0.7), rgba($black,0)50%), image-url("/assets/imgs/home/chairs.jpg") center);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.home-fluidratio.image-2{
+  display: none;
+  @include breakpoint(600px){
+    display: block;
+    background: url("/assets/imgs/home/hall.jpg") center;
+    @include background(linear-gradient(left, rgba($black,0.7), rgba($black,0)75%), image-url("/assets/imgs/home/hall.jpg") center);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.home-fluidratio.image-3 {
+  display: none;
+  @include breakpoint(600px){
+    display: block;
+    background: url("/assets/imgs/home/hands.jpg") center;
+    @include background(linear-gradient(left, rgba($black,0.7), rgba($black,0)50%), image-url("/assets/imgs/home/hands.jpg") center);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.home-fluidratio.image-4 {
+  display: none;
+  @include breakpoint(600px){
+    display: block;
+    background: url("/assets/imgs/home/books.jpg") center;
+    @include background(linear-gradient(left, rgba($black,0.7), rgba($black,0)50%), image-url("/assets/imgs/home/books.jpg") center);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.home-fluidratio.image-5 {
+  display: none;
+  @include breakpoint(600px){
+    display: block;
+    background: url("/assets/imgs/home/eimerstahl.jpg") center;
+    @include background(linear-gradient(left, rgba($black,0.7), rgba($black,0)50%), image-url("/assets/imgs/home/eimerstahl.jpg") center);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+.home-fluidratio {
+  width: 100%;
+  // display: none;
+  z-index: -4;
+  position: absolute;
+  top: 0;
+  height: 385px;
+  @include breakpoint($bp1){
+    // display: block;
+    height: 500px;
+  }
+}
+
+.home-fluidratio.active {
+  z-index: -2;
+  // display: block;
+}
+
+.home-hero__text{
+  @extend %trade-gothic;
+  z-index: 5;
+  margin-top: -320px;
+  margin-bottom: -370px;
+  max-width: 360px;
+  @include breakpoint($bp1){
+    margin-top: -370px;
+  }
+}
+
+
+.home-hero__text > p{
+    @extend %trade-gothic;
+    font-size: 22px; //22/26
+    line-height: 1.15;
+    color: $white;
+    font-weight: 400;
+    @include slug(0,4);
+    @include breakpoint($bp1){
+      font-size: 24px; //24/28
+      line-height: 1.16;
+      @include slug(0,2.75);
+    }
+}
+
+
+.hero {
+  width: 100%;
+  margin-top: 55px;
+  height: 70px;
+  @include breakpoint($bp1){
+    margin-top: 0;
+    height: 85px;
+  }
+  @include breakpoint($bp2){
+    height: 160px;
+    }
+}
+
+.hero.image-1 {
+  background: url("/assets/imgs/landing/clients.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero.image-2 {
+  background: url("/assets/imgs/landing/firm.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero.image-3 {
+  background: url("/assets/imgs/landing/lawyers.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero.image-4 {
+  background: url("/assets/imgs/landing/media.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero.image-5 {
+  background: url("/assets/imgs/landing/contact.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

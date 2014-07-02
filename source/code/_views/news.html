@@ -1,0 +1,70 @@
+{% extends "default" %}
+{% block content_wrapper %}
+<div class="hero image-4">
+    <header class="element-invisible">
+      <p>Landing page for "News" with Image of view out of a screen.</p>
+    </header>
+</div>
+<div class="container">
+  <div class="l-column2 l-print">
+    <h1 class="landing-hero__text">{{ page.title }}</h1>
+    <div>
+      {% block content %}{{ page.blocks.content|raw }}{% endblock %}
+    </div>
+    <ul class="media-list">
+        {% for post in page.pagination.items %}
+        <li class="media-list__item">
+          {% if post.pdf %}
+          <h1 class="media-list__title"><a href="{{ site.url }}/assets/PDFs/{{ post.pdf }}">{{ post.title }}</a></h1>
+            {% else %}
+          <h1 class="media-list__title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+          {% endif %}
+          <p class="media-list__metadata">
+            {% if post.source and post.author and post.displaydate and post.date%}
+              {{ post.source }},  {{ post.author|title }} </p>
+            {% elseif post.source and post.author and post.date%}
+              {{ post.source }},  {{ post.author|title }}, {{ post.date|date("F Y") }} </p>
+            {% elseif post.source and post.displaydate and post.date %}
+                {{ post.source }} </p>
+            {% elseif post.source and post.date %}
+                {{ post.source }}, {{ post.date|date("F Y") }} </p>
+            {% elseif post.author and post.displaydate and post.date %}
+                {{ post.author|title }} </p>
+            {% elseif post.author and post.date %}
+                {{ post.author|title }}, {{ post.date|date("F Y") }}  </p>
+            {% elseif post.source %}
+                {{ post.source }} </p>
+            {% elseif post.author %}
+                {{ post.author|title }} </p>
+            {% elseif post.date %}
+              {{ post.date|date("F Y") }} </p>
+            {% else %}
+            </p>
+            {% endif %}
+            {% if post.teaser %}
+              <p class="media-list__source">{{ post.teaser }}</p>
+            {% endif %}
+            {% if post.pdf %}
+              <p class="read__more"><a href="{{ site.url }}/assets/PDFs/{{ post.pdf }}"> Download PDF > </a></p>
+            {% else %}
+              <p class="read__more"><a href="{{ site.url }}{{ post.url }}"> Read More > </a></p>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% if page.pagination.previous_page or page.pagination.next_page %}
+      <nav class="pagination">
+            {% if page.pagination.previous_page %}
+              <a class="newer" href="{{ site.url }}{{ page.pagination.previous_page.url }}">< Newer</a>
+            {% endif %}
+            {% if page.pagination.next_page %}
+              <a class="older" href="{{ site.url }}{{ page.pagination.next_page.url }}">Older ></a>
+            {% endif %}
+      </nav>
+{% endif %}
+    </div>
+  <div class="l-column3">
+    {{ include('includes/sidebar-share.html') }}
+  </div>
+</div>
+{% endblock %}

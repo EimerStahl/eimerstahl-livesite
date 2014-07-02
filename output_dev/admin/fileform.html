@@ -1,0 +1,43 @@
+<!-- File Button -->
+<div id="uploader">
+  <h3>Upload a file</h3>
+  <form id="add-file-form" action="./app.php" method="post" >
+                <div class="control-group">
+                  
+                  <div class="controls">
+                    <label class="upload-label btn">
+                    <input id="filebutton" name="uploadFile" class="input-file upload-file" type="file" >
+                    PDF or vCard
+                    </label>
+                    <label class="upload-label btn">
+                    <input id="filebutton2" name="uploadFileBio" class="input-file upload-file" type="file">
+                    Image - Bio Photo
+                    </label>
+                    <label class="upload-label btn">
+                    <input id="filebutton3" name="uploadFileAward" class="input-file upload-file" type="file">
+                    Image - Award</label>
+                    <label class="upload-label btn">
+                    <input id="filebutton4" name="uploadFileInline" class="input-file upload-file-inline" type="file" >
+                    Image - Inline</label>
+                    <label class="upload-label btn">
+                    <input id="filebutton5" name="uploadSidebar" class="input-file upload-file-sidebar" type="file" >
+                    Image - Left Sidebar</label>
+                    <div class="validation-errors alert  alert-danger" style="display: none;"></div>
+                    <div id="upload-ready" style="display:none;">
+                      <h4>Ready to upload:</h4>
+                      <div class="queue1"></div>
+                      <div class="queue2"></div>
+                      <div class="queue3"></div>
+                      <div class="queue4"></div>
+                      <div class="queue5"></div>
+                    </div>
+                    <input type="hidden" value="upload" name="action">
+                  <button name="button2id" id="upload-button" class="btn btn-success content-create-save upload-button">Upload</button>
+                  </div>
+                </div>
+  </form>
+  <div id="upload-success" style="display:none;">
+  <button name="upload-another" id="upload-another" class="btn btn-success upload-another">Upload Another</button>
+  </div>
+</div>
+

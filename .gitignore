@@ -1,4 +1,4 @@
-output_dev
-app
+output_dev/
+app/
 /source/code/.sass-cache
 sculpin

@@ -1,4 +1,5 @@
+*.DS_Store
 output_dev/
 app/
-/source/code/.sass-cache
+*.sass-cache/
 sculpin

@@ -65,6 +65,7 @@
 
 .navigation-list {
   display: none;
+  margin-bottom: 2em;
   @include breakpoint($bp1){
     display: inline;
     clear: both;
@@ -72,6 +73,7 @@
     list-style: none;
     @include slug(0, 0);
     margin-left: 0;
+    margin-bottom: 0;
   }
   @include breakpoint($bp2){
     clear: none;
@@ -90,6 +92,7 @@
   clear: both;
   list-style: none;
   margin: 0;
+  margin-bottom: 2em;
 }
 
 .navigation-list__child {

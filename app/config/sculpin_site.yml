@@ -2,8 +2,8 @@
 # via `site.*`. So for example, {{ site.title }} can be used
 # in a template to get the contents of the `title` key.
 title: EimerStahl
-url: http://www.eimerstahl.com
-# url: http://palantir.net/clients/eimerstahl/site-v2-0603
+# url: http://www.eimerstahl.com
+url: http://palantir.net/clients/eimerstahl/site-test
 
 # Home Page Hero Images go here
 home_image_1: chairs.jpg

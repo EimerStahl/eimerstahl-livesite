@@ -10,7 +10,7 @@ awards:
 ---
 Pam Hanebutt is a partner at Eimer Stahl LLP.  She is an experienced litigator whose practice encompasses a wide variety of disputes.  Over the last decade, the principal focus of Pam's practice has been product liability, toxic tort, environmental and class action litigation, including:  defective product and failure to warn claims, natural resources damages claims, Superfund and related contribution litigation, and environmental enforcement litigation.  Recent representative matters include:
 
-* n Re MTBE Products Liability multidistrict litigation pending in the Southern District of New York, in which Pam represents CITGO Petroleum Corporation in suits filed by local and state governments and private water suppliers, arising out of the use of MTBE in gasoline;
+* In Re MTBE Products Liability multidistrict litigation pending in the Southern District of New York, in which Pam represents CITGO Petroleum Corporation in suits filed by local and state governments and private water suppliers, arising out of the use of MTBE in gasoline;
 
 * Chondrolysis litigation, involving more than a hundred personal injury cases filed in state and federal courts around the country against a medical device manufacturer alleging failure to warn;
 

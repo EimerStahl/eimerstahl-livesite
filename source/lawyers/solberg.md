@@ -2,7 +2,7 @@
 layout: profile
 
 title: Scott C. Solberg
-image: scott_solberg.jpg
+image: rsz_elledge_080212_2831_es_0095.jpg
 phone: 312 660 7666
 email: ssolberg@EimerStahl.com
 vcard: Scott_Solberg.vcf

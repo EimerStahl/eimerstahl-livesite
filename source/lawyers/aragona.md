@@ -8,7 +8,7 @@ email: aaragona@EimerStahl.com
 vcard: Arin_Aragona.vcf
 awards:
 ---
-Arin C. Aragona is an associate at Eimer Stahl LLP.  He has experience in a variety of complex commercial litigation cases, including contract disputes, antitrust matters, class actions, and commercial torts.  Mr. Aragona has represented clients in federal and state courts, as well as arbitration settings.  Relevant experience includes:
+Arin C. Aragona is a Partner at Eimer Stahl LLP.  He has experience in a variety of complex commercial litigation cases, including contract disputes, antitrust matters, class actions, and commercial torts.  Mr. Aragona has represented clients in federal and state courts, as well as arbitration settings.  Relevant experience includes:
 
 In re: Processed Egg Products Antitrust Litigation
 Eastern District of Pennsylvania, MDL 2002

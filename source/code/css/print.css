@@ -709,7 +709,7 @@
 
   /* line 101, ../sass/_typography.scss */
   h5 {
-    color: black;
+    color: #000000;
     font-weight: 600;
     font-weight: bold;
     font-size: 16px;
@@ -812,7 +812,7 @@
 
   /* line 31, ../sass/print.scss */
   h1 {
-    color: black !important;
+    color: #000000 !important;
     font-size: 28px;
     padding-bottom: 1em;
     margin-bottom: 0;
@@ -862,7 +862,7 @@
   /* line 74, ../sass/print.scss */
   a:link,
   a:visited {
-    color: black;
+    color: #000000;
   }
 
   /* line 81, ../sass/print.scss */
@@ -903,12 +903,12 @@
   .home-hero__text {
     margin-top: 0;
     margin-bottom: 0;
-    color: black;
+    color: #000000;
   }
 
   /* line 120, ../sass/print.scss */
   .home-hero__text > p {
-    color: black;
+    color: #000000;
   }
 
   /* line 121, ../sass/print.scss */

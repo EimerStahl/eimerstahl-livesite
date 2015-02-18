@@ -709,7 +709,7 @@ li ul li {
 
 /* line 101, ../sass/_typography.scss */
 h5 {
-  color: black;
+  color: #000000;
   font-weight: 600;
   font-weight: bold;
   font-size: 16px;
@@ -1137,7 +1137,7 @@ a:active {
   position: relative;
   width: 100%;
   margin-top: 55px;
-  background-color: black;
+  background-color: #000000;
   height: 385px;
 }
 @media (min-width: 601px) {
@@ -1152,9 +1152,11 @@ a:active {
 .home-fluidratio.image-1 {
   display: block;
   background: url("/assets/imgs/home/books-mobile.jpg") center;
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%), url(/assets/imgs/home/books-mobile.jpg) center;
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%), url(/assets/imgs/home/books-mobile.jpg) center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%), url(/assets/imgs/home/books-mobile.jpg) center;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('/assets/imgs/home/books-mobile.jpg') center;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0))), url('/assets/imgs/home/books-mobile.jpg') center;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%), url('/assets/imgs/home/books-mobile.jpg') center;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%), url('/assets/imgs/home/books-mobile.jpg') center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%), url('/assets/imgs/home/books-mobile.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1163,9 +1165,11 @@ a:active {
   .home-fluidratio.image-1 {
     display: block;
     background: url("/assets/imgs/home/chairs.jpg") center;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/chairs.jpg) center;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/chairs.jpg) center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/chairs.jpg) center;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjciLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('/assets/imgs/home/chairs.jpg') center;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(50%, rgba(0, 0, 0, 0))), url('/assets/imgs/home/chairs.jpg') center;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/chairs.jpg') center;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/chairs.jpg') center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/chairs.jpg') center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1180,9 +1184,11 @@ a:active {
   .home-fluidratio.image-2 {
     display: block;
     background: url("/assets/imgs/home/hall.jpg") center;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 75%), url(/assets/imgs/home/hall.jpg) center;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 75%), url(/assets/imgs/home/hall.jpg) center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 75%), url(/assets/imgs/home/hall.jpg) center;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjciLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('/assets/imgs/home/hall.jpg') center;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(75%, rgba(0, 0, 0, 0))), url('/assets/imgs/home/hall.jpg') center;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 75%), url('/assets/imgs/home/hall.jpg') center;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 75%), url('/assets/imgs/home/hall.jpg') center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 75%), url('/assets/imgs/home/hall.jpg') center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1197,9 +1203,11 @@ a:active {
   .home-fluidratio.image-3 {
     display: block;
     background: url("/assets/imgs/home/hands.jpg") center;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/hands.jpg) center;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/hands.jpg) center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/hands.jpg) center;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjciLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('/assets/imgs/home/hands.jpg') center;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(50%, rgba(0, 0, 0, 0))), url('/assets/imgs/home/hands.jpg') center;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/hands.jpg') center;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/hands.jpg') center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/hands.jpg') center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1214,9 +1222,11 @@ a:active {
   .home-fluidratio.image-4 {
     display: block;
     background: url("/assets/imgs/home/books.jpg") center;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/books.jpg) center;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/books.jpg) center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/books.jpg) center;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjciLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('/assets/imgs/home/books.jpg') center;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(50%, rgba(0, 0, 0, 0))), url('/assets/imgs/home/books.jpg') center;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/books.jpg') center;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/books.jpg') center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/books.jpg') center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1231,9 +1241,11 @@ a:active {
   .home-fluidratio.image-5 {
     display: block;
     background: url("/assets/imgs/home/eimerstahl.jpg") center;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/eimerstahl.jpg) center;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/eimerstahl.jpg) center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url(/assets/imgs/home/eimerstahl.jpg) center;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjciLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('/assets/imgs/home/eimerstahl.jpg') center;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(50%, rgba(0, 0, 0, 0))), url('/assets/imgs/home/eimerstahl.jpg') center;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/eimerstahl.jpg') center;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/eimerstahl.jpg') center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), url('/assets/imgs/home/eimerstahl.jpg') center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1277,7 +1289,7 @@ a:active {
 .home-hero__text > p {
   font-size: 22px;
   line-height: 1.15;
-  color: white;
+  color: #ffffff;
   font-weight: 400;
   margin-top: 0px;
   margin-bottom: 16px;
@@ -1415,7 +1427,7 @@ a:active {
   left: 0;
   width: 100%;
   height: 61px;
-  background-color: white;
+  background-color: #ffffff;
   border-top: 1px solid #bdbdbd;
   border-bottom: 1px solid #bdbdbd;
   -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
@@ -1667,7 +1679,7 @@ footer {
 
 /* line 46, ../sass/components/_content.scss */
 .landing-hero__text {
-  color: white;
+  color: #ffffff;
   margin-top: -41px;
   margin-bottom: 22px;
 }
@@ -1742,7 +1754,7 @@ footer {
 .lawyers-list__item a:link,
 .lawyers-list__item a:active,
 .lawyers-list__item a:visited {
-  color: black;
+  color: #000000;
 }
 
 /* line 102, ../sass/components/_content.scss */
@@ -2038,7 +2050,7 @@ footer {
 .contact-name a:link,
 .contact-name a:visited,
 .contact-name a:active {
-  color: black;
+  color: #000000;
 }
 
 /* line 327, ../sass/components/_content.scss */
@@ -2324,7 +2336,7 @@ footer {
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
-  color: black;
+  color: #000000;
   font-weight: 600;
   font-weight: bold;
   font-size: 16px;
@@ -2342,7 +2354,7 @@ footer {
 .media-list__title a:link,
 .media-list__title a:visited,
 .media-list__title a:active {
-  color: black;
+  color: #000000;
 }
 
 /* line 533, ../sass/components/_content.scss */
